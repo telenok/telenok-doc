@@ -1,0 +1,85 @@
+<h1>Создание контроллера веб-странц</h1>
+
+<p>Контроллер веб-страницы - это класс, расширяющий базовый класс как показано ниже</p>
+
+<pre>
+    <code class="php">
+    class MyController extends \App\Telenok\Core\Controller\Frontend\Controller {}
+    </code>
+</pre>
+
+<p>
+В конструкторе базового класса для всех шаблонов отображения создается переменная $controllerAction, 
+которая содержит объект активного контроллера, обрабатывающего GET, POST и другие запросы и указанного в определении роутера.
+</p>
+
+<pre>
+    <code class="php">
+    \Route::get('some-path', array('as' => 'some.name.route', 'uses' => "\App\MyNamespace\Controller@getContent"));
+    </code>
+</pre>
+
+<p>
+В приведенном примере активный контроллер - это объект, созданный из класса \App\MyNamespace\Controller.
+</p>
+
+<p>
+    Воспользоваться переменной можно в шаблоне для добавления CSS, JS файлов или кода в блок <code>&lt;header&gt;&lt;/header&gt;</code> страницы и в других случаях следующим образом:
+</p>
+
+<pre>
+    <code class="php">
+    &lt;div class=&quot;content-wrapper&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+        
+    $jsCode = <<<EOF
+    <script>
+        jQuery(function()
+        {
+            jQuery('button.install-now').click(function()
+            {
+                var modal = jQuery("#installModalBox");
+                var form = jQuery('form', modal);
+
+                var domain = jQuery('input[name="domain_install"]', modal).val();
+
+                var link = document.createElement('a');
+                link.setAttribute('href', domain); 
+
+                domain = 'http://' + link.hostname + '/telenok/';
+
+                form.attr('action', domain);
+                form.submit();
+            });
+        });
+    </script>
+    EOF;
+
+    <span class="line">$controllerAction->addJsCode($jsCode);</span>
+    </code>
+</pre>
+
+<p>В классе Контроллера веб-страницы Вы можете обратиться к объекту Request следующим образом для получения значения GET, POST и других типов запросов.</p>
+
+<pre>
+    <code class="php">
+    // GET запрос
+    $name = $this->getRequest()->get('name');
+    
+    // массив $_FILES
+    $myFile = $this->getRequest()->file('some_file_name');
+
+    // значение из массива $_REQUEST и значение по умолчанию
+    $name = $this->getRequest()->input('name', 'John');
+    
+    // все параметры запроса
+    $allParam = $this->getRequest()->input();
+
+    // проверка присутствия параметра в запросе
+    if ($this->getRequest()->has('some_var')) {}
+    
+    </code>
+</pre>
