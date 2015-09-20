@@ -1,6 +1,6 @@
 <h1>Создание контроллера веб-странц</h1>
 
-<p>Контроллер веб-страницы - это класс, расширяющий базовый класс как показано ниже</p>
+<p>Контроллер веб-страницы - это класс, расширяющий базовый класс <code>\App\Telenok\Core\Controller\Frontend\Controller</code> как показано ниже</p>
 
 <pre>
     <code class="php">
@@ -9,7 +9,7 @@
 </pre>
 
 <p>
-В конструкторе базового класса для всех шаблонов отображения создается переменная $controllerAction, 
+В конструкторе базового класса для всех шаблонов отображения создается переменная <code>$controllerAction</code>, 
 которая содержит объект активного контроллера, обрабатывающего GET, POST и другие запросы и указанного в определении роутера.
 </p>
 
@@ -20,7 +20,7 @@
 </pre>
 
 <p>
-В приведенном примере активный контроллер - это объект, созданный из класса \App\MyNamespace\Controller.
+В приведенном примере активный контроллер <code>$controllerAction</code> - это объект, созданный из класса \App\MyNamespace\Controller.
 </p>
 
 <p>
@@ -28,23 +28,23 @@
 </p>
 
 <pre>
-    <code class="php">
+    <code class="html">
     &lt;div class=&quot;content-wrapper&quot;&gt;
         &lt;div class=&quot;container&quot;&gt;
             &lt;div class=&quot;row&quot;&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
         
-    $jsCode = <<<EOF
-    <script>
+    $jsCode = &lt;&lt;&lt;EOF
+    &lt;script&gt;
         jQuery(function()
         {
             jQuery('button.install-now').click(function()
             {
-                var modal = jQuery("#installModalBox");
+                var modal = jQuery(&quot;#installModalBox&quot;);
                 var form = jQuery('form', modal);
 
-                var domain = jQuery('input[name="domain_install"]', modal).val();
+                var domain = jQuery('input[name=&quot;domain_install&quot;]', modal).val();
 
                 var link = document.createElement('a');
                 link.setAttribute('href', domain); 
@@ -55,7 +55,7 @@
                 form.submit();
             });
         });
-    </script>
+    &lt;/script&gt;
     EOF;
 
     <span class="line">$controllerAction->addJsCode($jsCode);</span>

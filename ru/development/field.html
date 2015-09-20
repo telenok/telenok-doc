@@ -16,6 +16,7 @@
         'field_object_type' => 'product',
         'field_object_tab' => 'main',
         'relation_many_to_many_has' => 'category',
+        'field_view' => 'core::field.integer-unsigned.model',
         'multilanguage' => 0,
         'show_in_form' => 1,
         'show_in_list' => 1,
@@ -33,6 +34,8 @@
 <p>В поле "field_object_type" указывается код или ID типа, которому это поле принадлежит.</p>
 
 <p>В поле "field_object_tab" указывается код вкладки формы с данными объекта, в которой отображается поле.</p>
+<p>В поле "field_view" указывается код шаблона поля для отображения в форме редактирования объекта. Если оставить поле пустым - будет использовано значение по умолчанию, 
+    соответствующее опции в классе поля, например, для поля с кодом "integer" это значение равно "core::field.integer.model"</p>
 
 <p>В поле "show_in_form" разрешается показ поля в форме.</p>
 <p>В поле "show_in_list" разрешается показ поля в списке.</p>
