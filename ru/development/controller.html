@@ -62,6 +62,40 @@
     </code>
 </pre>
 
+
+<p>Так же Вы можете добавлять CSS и JS код в <code>&lt;header&gt;&lt;/header&gt;</code> следующим образом</p>
+
+<pre>
+    <code class="php">
+        
+&lt;?php
+
+    ob_start();
+
+?&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+
+    jQuery(function()
+    {
+        //some javascript code
+    });
+
+&lt;/script&gt;
+
+&lt;?php
+
+    $jsCode = ob_get_contents();
+
+    ob_end_clean();
+
+    $controllerAction-&gt;addJsCode($jsCode); 
+
+?&gt;
+                
+    </code>
+</pre>
+
 <p>В классе Контроллера веб-страницы Вы можете обратиться к объекту Request следующим образом для получения значения GET, POST и других типов запросов.</p>
 
 <pre>
