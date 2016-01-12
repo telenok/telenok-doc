@@ -1,18 +1,52 @@
 [
     {
-        "title": "Ext JS 4 Guides",
+        "title": "Введение",
         "items": [
             {
-                "name": "getting_started",
-                "url": "guides/getting_started",
-                "title": "Getting Started with Ext JS 4",
-                "description": "This introduction to Ext JS 4 explains how you can get started."
+                "name": "introduction_getting_started",
+                "url": "introduction/getting_started",
+                "title": "С чего начать",
+                "description": "Пункты документации, на которые необходимо обратить внимание при первом знакомстве."
             },
             {
-                "name": "class_system",
-                "url": "guides/class_system",
-                "title": "The Class System",
-                "description": "Creating classes with the new class system in Ext JS 4.x."
+                "name": "introduction_about_author",
+                "url": "introduction/about_author",
+                "title": "Об авторе",
+                "description": "Несколько слов об авторе и вехах проекта."
+            }
+        ]
+    },
+    {
+        "title": "Руководство пользователя",
+        "items": [
+            {
+                "name": "interface_common",
+                "url": "guide/user/interface/common",
+                "title": "Общие элементы интерфейса",
+                "description": "Пункты документации, на которые необходимо обратить внимание при первом знакомстве."
+            },
+            {
+                "name": "introduction_about_author",
+                "url": "introduction/about_author",
+                "title": "Об авторе",
+                "description": "Несколько слов об авторе и вехах проекта."
+            }
+        ]
+    },
+    {
+        "title": "Руководство разработчика",
+        "items": [
+            {
+                "name": "introduction_getting_started",
+                "url": "introduction/getting_started",
+                "title": "С чего начать",
+                "description": "Пункты документации, на которые необходимо обратить внимание при первом знакомстве."
+            },
+            {
+                "name": "introduction_about_author",
+                "url": "introduction/about_author",
+                "title": "Об авторе",
+                "description": "Несколько слов об авторе и вехах проекта."
             }
         ]
     }
