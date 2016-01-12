@@ -12,6 +12,8 @@ $initialConfig = [
         "];",
         "</script>"
     ],
+    "--css" => [],
+    //"--guides-toc-level" => 4,
     "--seo" => true,
     "--warnings" => [],
     "--guides" => "",
@@ -29,9 +31,13 @@ $output = '/home/telenoklocal/site/public/documentation/jsduck';
 $guide = '/home/telenoklocal/site/jsduck-doc/new';
 $tmp = '/home/telenoklocal/site/jsduck-doc/tmp.file';
 
+$tmpDir = '/home/telenoklocal/site/jsduck-doc/tmp/';
+
 $language = ['ru'/*, 'en', 'fr', 'de', 'ch', 'es', 'ar'*/];
 
 $fileList = [];
+
+$uniqueId = md5(uniqid());
 
 foreach ($path as $v)
 {
@@ -41,7 +47,29 @@ foreach ($path as $v)
 
     foreach ($regex as $f)
     {
-        $fileList[] = $f[0];
+        $fp = str_replace('/home/telenoklocal/site/vendor/', $tmpDir, $f[0]);
+
+        mkdir(pathinfo($fp, PATHINFO_DIRNAME), 0777, true);
+
+        copy($f[0], $fp);
+
+        $content = file($fp);
+
+        $ll = [];
+
+        foreach($content as $line)
+        {
+            if (!preg_match('/^[\t\r ]*(\/\*|\*)/', $line))
+            {
+                $line = '//' . $uniqueId . $line;
+            }
+
+            $ll[] = $line;
+        }
+
+        file_put_contents($fp, implode("\n", $ll));
+
+        $fileList[] = $fp;
     }
 }
 
@@ -55,5 +83,11 @@ foreach($language as $l)
     file_put_contents($tmp, json_encode($initialConfig));
     
     exec('jsduck --config ' . $tmp);
-}
+    
+    foreach (new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($output . '/' . $l . '/source')) as $filename)
+    {
+        if ($filename->isDir()) continue;
 
+        file_put_contents($filename->getPathname(), str_replace('//' . $uniqueId, '', file_get_contents($filename->getPathname())));
+    }
+}

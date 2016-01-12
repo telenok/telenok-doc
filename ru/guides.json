@@ -1,6 +1,7 @@
 [
     {
         "title": "Введение",
+        "expanded": true,
         "items": [
             {
                 "name": "introduction_getting_started",
@@ -11,42 +12,34 @@
             {
                 "name": "introduction_about_author",
                 "url": "introduction/about_author",
-                "title": "Об авторе",
+                "title": "От автора",
                 "description": "Несколько слов об авторе и вехах проекта."
             }
         ]
     },
     {
         "title": "Руководство пользователя",
+        "expanded": true,
         "items": [
             {
-                "name": "interface_common",
-                "url": "guide/user/interface/common",
-                "title": "Общие элементы интерфейса",
-                "description": "Пункты документации, на которые необходимо обратить внимание при первом знакомстве."
+                "name": "module_list",
+                "url": "guide/user/module/list",
+                "title": "Модули",
+                "description": "Работа с модулями."
             },
             {
-                "name": "introduction_about_author",
-                "url": "introduction/about_author",
-                "title": "Об авторе",
-                "description": "Несколько слов об авторе и вехах проекта."
-            }
-        ]
-    },
-    {
-        "title": "Руководство разработчика",
-        "items": [
-            {
-                "name": "introduction_getting_started",
-                "url": "introduction/getting_started",
-                "title": "С чего начать",
-                "description": "Пункты документации, на которые необходимо обратить внимание при первом знакомстве."
-            },
-            {
-                "name": "introduction_about_author",
-                "url": "introduction/about_author",
-                "title": "Об авторе",
-                "description": "Несколько слов об авторе и вехах проекта."
+                "name": "module_list",
+                "title": "Руководство пользователя",
+                "expanded": true,
+                "items": [
+                    {
+                        "name": "module_list",
+                        "url": "guide/user/module/list",
+                        "title": "Модули",
+                        "description": "Работа с модулями."
+                    }
+                ]
+                
             }
         ]
     }
