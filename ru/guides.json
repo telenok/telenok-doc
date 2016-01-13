@@ -5,13 +5,11 @@
         "items": [
             {
                 "name": "introduction_getting_started",
-                "url": "introduction/getting_started",
                 "title": "С чего начать",
                 "description": "Пункты документации, на которые необходимо обратить внимание при первом знакомстве."
             },
             {
                 "name": "introduction_about_author",
-                "url": "introduction/about_author",
                 "title": "От автора",
                 "description": "Несколько слов об авторе и вехах проекта."
             }
@@ -22,24 +20,40 @@
         "expanded": true,
         "items": [
             {
-                "name": "module_list",
-                "url": "guide/user/module/list",
-                "title": "Модули",
-                "description": "Работа с модулями."
+                "name": "guide_user_introduction",
+                "title": "Введение",
+                "description": "Введение в Руководство пользователя."
             },
             {
-                "name": "module_list",
-                "title": "Руководство пользователя",
+                "name": "guide_user_setting",
+                "title": "Настройки",
+                "description": "Настройки языка и внешнего вида приложения."
+            },
+            {
+                "name": "guide_user_module_group",
+                "title": "Группы модулей",
+                "description": "Работа с группами модулей."
+            },
+            {
+                "title": "Модули",
                 "expanded": true,
                 "items": [
                     {
-                        "name": "module_list",
-                        "url": "guide/user/module/list",
-                        "title": "Модули",
-                        "description": "Работа с модулями."
+                        "name": "guide_user_modules_introduction",
+                        "title": "Введение",
+                        "description": "Несколько слов о модулях."
+                    },
+                    {
+                        "title": "Список модулей",
+                        "items": [
+                            {
+                                "name": "guide_user_module_object_type",
+                                "title": "Тип объекта",
+                                "description": "Модуль для работы с типами объектов."
+                            }
+                        ]
                     }
                 ]
-                
             }
         ]
     }

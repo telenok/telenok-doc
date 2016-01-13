@@ -13,8 +13,8 @@ $initialConfig = [
         "</script>"
     ],
     "--css" => [],
-    //"--guides-toc-level" => 4,
     "--seo" => true,
+    "--external" => ["Illuminate.*"],
     "--warnings" => [],
     "--guides" => "",
     "--output" => "",
@@ -49,7 +49,7 @@ foreach ($path as $v)
     {
         $fp = str_replace('/home/telenoklocal/site/vendor/', $tmpDir, $f[0]);
 
-        mkdir(pathinfo($fp, PATHINFO_DIRNAME), 0777, true);
+        @mkdir(pathinfo($fp, PATHINFO_DIRNAME), 0777, true);
 
         copy($f[0], $fp);
 
