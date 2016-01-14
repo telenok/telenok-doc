@@ -43,6 +43,13 @@
                         "title": "Введение",
                         "description": "Несколько слов о модулях."
                     },
+                    
+                    {
+                        "name": "guide_user_modules_common_form",
+                        "title": "Общие элементы типов",
+                        "description": "Общие элементы типов объектов."
+                    },                    
+                    
                     {
                         "title": "Список модулей",
                         "items": [
