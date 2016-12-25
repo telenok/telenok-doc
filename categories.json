@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Core",
+        "groups": [
+            {
+                "name": "Interfaces",
+                "classes": [
+                    "Telenok.Core.Interfaces.*"
+                ]
+            },
+            {
+                "name": "Fields",
+                "classes": [
+                    "Telenok.Core.Field.*"
+                ]
+            },
+            {
+                "name": "Middlewares",
+                "classes": [
+                    "Telenok.Core.Middleware.*"
+                ]
+            },
+            {
+                "name": "Models",
+                "classes": [
+                    "Telenok.Core.Model.*"
+                ]
+            },
+            {
+                "name": "Modules",
+                "classes": [
+                    "Telenok.Core.Module.*"
+                ]
+            },
+            {
+                "name": "Security",
+                "classes": [
+                    "Telenok.Core.Security.*"
+                ]
+            },
+            {
+                "name": "Setting",
+                "classes": [
+                    "Telenok.Core.Setting.*"
+                ]
+            },
+            {
+                "name": "Support",
+                "classes": [
+                    "Telenok.Core.Support.*"
+                ]
+            },
+            {
+                "name": "Widgets",
+                "classes": [
+                    "Telenok.Core.Widget.*"
+                ]
+            },
+            {
+                "name": "Jobs",
+                "classes": [
+                    "Telenok.Core.Jobs.*"
+                ]
+            },
+            {
+                "name": "Interfaces",
+                "classes": [
+                    "Telenok.Core.Command.*"
+                ]
+            },
+            {
+                "name": "Controllers",
+                "classes": [
+                    "Telenok.Core.Controller.*"
+                ]
+            },
+            {
+                "name": "Other",
+                "classes": [
+                    "Telenok.Core.Contract.*",
+                    "Telenok.Core.CoreServiceProvider",
+                    "Telenok.Core.PackageInfo",
+                    "Telenok.Core.ModuleGroup.*",
+                    "Telenok.Core.Composer.*",
+                    "Telenok.Core.WidgetGroup.*"
+                ]
+            }
+        ]
+    }
+]

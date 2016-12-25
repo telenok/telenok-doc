@@ -1,7 +1,7 @@
 [
     {
         "title": "Введение",
-        "expanded": true,
+        "expanded": false,
         "items": [
             {
                 "name": "introduction_getting_started",
@@ -17,7 +17,7 @@
     },
     {
         "title": "Руководство пользователя",
-        "expanded": true,
+        "expanded": false,
         "items": [
             {
                 "name": "guide_user_introduction",
@@ -25,38 +25,291 @@
                 "description": "Введение в Руководство пользователя."
             },
             {
-                "name": "guide_user_setting",
-                "title": "Настройки",
-                "description": "Настройки языка и внешнего вида приложения."
-            },
-            {
-                "name": "guide_user_module_group",
-                "title": "Группы модулей",
-                "description": "Работа с группами модулей."
-            },
-            {
-                "title": "Модули",
-                "expanded": true,
+                "title": "Административная панель",
+                "expanded": false,
                 "items": [
                     {
-                        "name": "guide_user_modules_introduction",
-                        "title": "Введение",
-                        "description": "Несколько слов о модулях."
+                        "name": "guide_user_admin_panel",
+                        "title": "Общая информация",
+                        "description": "Общая информация."
                     },
-                    
                     {
-                        "name": "guide_user_modules_common_form",
-                        "title": "Общие элементы типов",
-                        "description": "Общие элементы типов объектов."
-                    },                    
-                    
+                        "name": "guide_user_setting",
+                        "title": "Настройки",
+                        "description": "Настройки языка и внешнего вида приложения."
+                    },
                     {
-                        "title": "Список модулей",
+                        "name": "guide_user_module_group",
+                        "title": "Группы модулей",
+                        "description": "Работа с группами модулей."
+                    },
+                    {
+                        "title": "Модули",
+                        "expanded": false,
                         "items": [
                             {
-                                "name": "guide_user_module_object_type",
-                                "title": "Тип объекта",
-                                "description": "Модуль для работы с типами объектов."
+                                "name": "guide_user_modules_introduction",
+                                "title": "Общая информация",
+                                "description": "Несколько слов о модулях."
+                            },
+
+                            {
+                                "name": "guide_user_modules_common_elements",
+                                "title": "Общие элементы",
+                                "description": "Общие элементы модулей."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Виджеты",
+                        "expanded": false,
+                        "items": [
+                            {
+                                "name": "guide_user_widgets_introduction",
+                                "title": "Общая информация",
+                                "description": "Несколько слов о модулях."
+                            },
+
+                            {
+                                "name": "guide_user_widgets_common_elements",
+                                "title": "Общие элементы типов",
+                                "description": "Общие элементы типов объектов."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Официальные пакеты",
+                "expanded": false,
+                "items": [
+                    {
+                        "name": "guide_user_package_introduction",
+                        "title": "Общая информация",
+                        "description": "Что такое Официальный пакет."
+                    },
+                    {
+                        "title": "Пакет Ядро",
+                        "expanded": false,
+                        "items": [
+                            {
+                                "name": "guide_user_package_core_introduction",
+                                "title": "Общая информация",
+                                "description": "Введение Пакет Ядро."
+                            },
+                            {
+                                "title": "Модули",
+                                "expanded": false,
+                                "items": [
+                                    {
+                                        "name": "guide_user_package_core_module_list",
+                                        "title": "Список",
+                                        "description": "Описание модуля Список."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_module_field",
+                                        "title": "Поле",
+                                        "description": "Описание модуля Поле."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_module_type",
+                                        "title": "Тип",
+                                        "description": "Описание модуля Тип."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_module_version",
+                                        "title": "Версия",
+                                        "description": "Описание модуля Версия."
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Виджеты",
+                                "expanded": false,
+                                "items": [
+                                    {
+                                        "name": "guide_user_package_core_widget_html",
+                                        "title": "Html",
+                                        "description": "Описание виджета Html."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_widget_rte",
+                                        "title": "Rte",
+                                        "description": "Описание виджета Rte."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_widget_menu",
+                                        "title": "Меню",
+                                        "description": "Описание виджета Меню."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_widget_table",
+                                        "title": "Таблица",
+                                        "description": "Описание виджета Таблица."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_widget_php_code",
+                                        "title": "Php код",
+                                        "description": "Описание виджета Php код."
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Руководство разработчика",
+        "expanded": false,
+        "items": [
+            {
+                "name": "guide_developer_introduction",
+                "title": "Общая информация",
+                "description": "Введение в Руководство разработчика."
+            },
+            {
+                "title": "Начиная",
+                "expanded": false,
+                "items": [
+                    {
+                        "name": "guide_developer_starter_install",
+                        "title": "Установка",
+                        "description": "Описание начальной установки."
+                    },
+                    {
+                        "name": "guide_developer_starter_configuration",
+                        "title": "Конфигурация",
+                        "description": "Описание начальной конфигурации."
+                    },
+                    {
+                        "name": "guide_developer_starter_directories",
+                        "title": "Структура директорий",
+                        "description": "Описание структуры директорий."
+                    },
+                    {
+                        "name": "guide_developer_package",
+                        "title": "Создание пакетов",
+                        "description": "Пакеты позволяют добавить функциональность вашему приложению."
+                    },
+                    {
+                        "name": "guide_developer_template",
+                        "title": "Создание шаблона веб-страницы",
+                        "description": "Шаблоны страниц позволяют менять дизайн в зависимости от разных параметров."
+                    },
+                    {
+                        "name": "guide_developer_setting",
+                        "title": "Настройки",
+                        "description": "Настройки системы."
+                    },
+                    {
+                        "name": "guide_developer_security",
+                        "title": "Безопасность",
+                        "description": "Настройки безопасности."
+                    },
+                    {
+                        "name": "guide_developer_data_base",
+                        "title": "База данных",
+                        "description": "База данных."
+                    }
+                ]
+            },
+            {
+                "title": "Как создать ?",
+                "expanded": false,
+                "items": [
+                    {
+                        "name": "guide_developer_create_module",
+                        "title": "Модуль",
+                        "description": "Как создать модуль."
+                    },
+                    {
+                        "name": "guide_developer_create_widget",
+                        "title": "Виджет",
+                        "description": "Как создать виджет."
+                    },
+                    {
+                        "name": "guide_developer_create_page_controller",
+                        "title": "Контроллер веб-страницы",
+                        "description": "Как создать контроллер веб-страницы."
+                    },
+                    {
+                        "name": "guide_developer_create_entity",
+                        "title": "Модель",
+                        "description": "Как создать модель."
+                    },
+                    {
+                        "name": "guide_developer_create_entity_field",
+                        "title": "Поле",
+                        "description": "Как создать поле модели."
+                    }
+                ]
+            },
+            {
+                "title": "Официальные пакеты",
+                "expanded": false,
+                "items": [
+                    {
+                        "name": "guide_developer_package_introduction",
+                        "title": "Общая информация",
+                        "description": "Введение."
+                    },
+                    {
+                        "title": "Пакет Ядро",
+                        "expanded": false,
+                        "items": [
+                            {
+                                "name": "guide_developer_package_core_introduction",
+                                "title": "Общая информация",
+                                "description": "Описание пакета Ядро для разработчика."
+                            },
+                            {
+                                "title": "Поля объектов",
+                                "expanded": false,
+                                "items": [
+                                    {
+                                        "name": "guide_developer_package_core_field_complex_array",
+                                        "title": "Комплексный массив (ComplexArray)",
+                                        "description": "Описание поля ComplexArray."
+                                    },
+                                    {
+                                        "name": "guide_developer_package_core_field_complex_data",
+                                        "title": "Комплексные данные (ComplexData)",
+                                        "description": "Описание поля ComplexData."
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Виджеты",
+                                "expanded": false,
+                                "items": [
+                                    {
+                                        "name": "guide_developer_package_core_widget_html",
+                                        "title": "Html",
+                                        "description": "Описание виджета Html."
+                                    },
+                                    {
+                                        "name": "guide_developer_package_core_widget_rte",
+                                        "title": "Rte",
+                                        "description": "Описание виджета Rte."
+                                    },
+                                    {
+                                        "name": "guide_developer_package_core_widget_menu",
+                                        "title": "Меню",
+                                        "description": "Описание виджета Меню."
+                                    },
+                                    {
+                                        "name": "guide_developer_package_core_widget_table",
+                                        "title": "Таблица",
+                                        "description": "Описание виджета Таблица."
+                                    },
+                                    {
+                                        "name": "guide_developer_package_core_widget_php_code",
+                                        "title": "Php код",
+                                        "description": "Описание виджета Php код."
+                                    }
+                                ]
                             }
                         ]
                     }
