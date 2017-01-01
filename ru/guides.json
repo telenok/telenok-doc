@@ -67,13 +67,30 @@
                             {
                                 "name": "guide_user_widgets_introduction",
                                 "title": "Общая информация",
-                                "description": "Несколько слов о модулях."
+                                "description": "Несколько слов о виджетах."
                             },
 
                             {
                                 "name": "guide_user_widgets_common_elements",
-                                "title": "Общие элементы типов",
-                                "description": "Общие элементы типов объектов."
+                                "title": "Общие элементы виджетов",
+                                "description": "Общие элементы типов виджетов."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Поля",
+                        "expanded": false,
+                        "items": [
+                            {
+                                "name": "guide_user_fields_introduction",
+                                "title": "Общая информация",
+                                "description": "Несколько слов о полях."
+                            },
+
+                            {
+                                "name": "guide_user_fields_common_elements",
+                                "title": "Общие элементы виджетов",
+                                "description": "Общие элементы полей объектов."
                             }
                         ]
                     }
@@ -120,6 +137,182 @@
                                         "name": "guide_user_package_core_module_version",
                                         "title": "Версия",
                                         "description": "Описание модуля Версия."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_module_profile",
+                                        "title": "Профиль",
+                                        "description": "Описание модуля Профиль."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_module_web_constructor",
+                                        "title": "Веб-конструктор",
+                                        "description": "Описание модуля Веб-конструктор."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_module_web_page",
+                                        "title": "Страница",
+                                        "description": "Описание модуля Страница."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_module_web_domain",
+                                        "title": "Домен",
+                                        "description": "Описание модуля Домен."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_module_file_manager",
+                                        "title": "Менеджер файлов",
+                                        "description": "Описание модуля Менеджер файлов."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_module_php_console",
+                                        "title": "PHP консоль",
+                                        "description": "Описание модуля PHP консоль."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_module_database_console",
+                                        "title": "Консоль Базы данных",
+                                        "description": "Описание модуля Консоль Базы данных."
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Поля",
+                                "expanded": false,
+                                "items": [
+                                    {
+                                        "name": "guide_user_package_core_field_complex_array",
+                                        "title": "Комплексный массив",
+                                        "description": "Описание поля Комплексный массив."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_complex_data",
+                                        "title": "Комплексные данные",
+                                        "description": "Описание поля Комплексные данные."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_created_by",
+                                        "title": "Служебное Создано",
+                                        "description": "Описание поля Служебное Создано."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_complex_array",
+                                        "title": "Комплексный массив",
+                                        "description": "Описание поля Комплексный массив."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_complex_array",
+                                        "title": "Комплексный массив",
+                                        "description": "Описание поля Комплексный массив."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_complex_array",
+                                        "title": "Комплексный массив",
+                                        "description": "Описание поля Комплексный массив."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_complex_array",
+                                        "title": "Комплексный массив",
+                                        "description": "Описание поля Комплексный массив."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_complex_array",
+                                        "title": "Комплексный массив",
+                                        "description": "Описание поля Комплексный массив."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_complex_array",
+                                        "title": "Комплексный массив",
+                                        "description": "Описание поля Комплексный массив."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_complex_array",
+                                        "title": "Комплексный массив",
+                                        "description": "Описание поля Комплексный массив."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_complex_array",
+                                        "title": "Комплексный массив",
+                                        "description": "Описание поля Комплексный массив."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_complex_array",
+                                        "title": "Комплексный массив",
+                                        "description": "Описание поля Комплексный массив."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_complex_array",
+                                        "title": "Комплексный массив",
+                                        "description": "Описание поля Комплексный массив."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_complex_array",
+                                        "title": "Комплексный массив",
+                                        "description": "Описание поля Комплексный массив."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_complex_array",
+                                        "title": "Комплексный массив",
+                                        "description": "Описание поля Комплексный массив."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_complex_array",
+                                        "title": "Комплексный массив",
+                                        "description": "Описание поля Комплексный массив."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_complex_array",
+                                        "title": "Комплексный массив",
+                                        "description": "Описание поля Комплексный массив."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_complex_array",
+                                        "title": "Комплексный массив",
+                                        "description": "Описание поля Комплексный массив."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_complex_array",
+                                        "title": "Комплексный массив",
+                                        "description": "Описание поля Комплексный массив."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_complex_array",
+                                        "title": "Комплексный массив",
+                                        "description": "Описание поля Комплексный массив."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_complex_array",
+                                        "title": "Комплексный массив",
+                                        "description": "Описание поля Комплексный массив."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_complex_array",
+                                        "title": "Комплексный массив",
+                                        "description": "Описание поля Комплексный массив."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_complex_array",
+                                        "title": "Комплексный массив",
+                                        "description": "Описание поля Комплексный массив."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_complex_array",
+                                        "title": "Комплексный массив",
+                                        "description": "Описание поля Комплексный массив."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_complex_array",
+                                        "title": "Комплексный массив",
+                                        "description": "Описание поля Комплексный массив."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_complex_array",
+                                        "title": "Комплексный массив",
+                                        "description": "Описание поля Комплексный массив."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_complex_array",
+                                        "title": "Комплексный массив",
+                                        "description": "Описание поля Комплексный массив."
                                     }
                                 ]
                             },
