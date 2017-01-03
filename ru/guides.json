@@ -195,53 +195,53 @@
                                         "description": "Описание поля Служебное Создано."
                                     },
                                     {
-                                        "name": "guide_user_package_core_field_complex_array",
-                                        "title": "Комплексный массив",
-                                        "description": "Описание поля Комплексный массив."
+                                        "name": "guide_user_package_core_field_date",
+                                        "title": "Дата",
+                                        "description": "Описание поля Дата."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_datetime",
+                                        "title": "ДатаВремя",
+                                        "description": "Описание поля ДатаВремя."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_datetime_range",
+                                        "title": "Диапазон ДатаВремя",
+                                        "description": "Описание поля Диапазон ДатаВремя."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_decimal",
+                                        "title": "Десятичная дробь",
+                                        "description": "Описание поля Десятичная дробь."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_deleted_by",
+                                        "title": "Служебное Удалено",
+                                        "description": "Описание поля Служебное Удалено."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_file_many_to_many",
+                                        "title": "Файл многие ко многим",
+                                        "description": "Описание поля Файл многие ко многим."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_integer_signed",
+                                        "title": "Целое со знаком",
+                                        "description": "Описание поля Целое со знаком."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_integer_unsigned",
+                                        "title": "Целое без знака",
+                                        "description": "Описание поля Целое без знака."
+                                    },
+                                    {
+                                        "name": "guide_user_package_core_field_locked_by",
+                                        "title": "Блокировано",
+                                        "description": "Описание поля Блокировано."
                                     },
                                     {
                                         "name": "guide_user_package_core_field_complex_array",
-                                        "title": "Комплексный массив",
-                                        "description": "Описание поля Комплексный массив."
-                                    },
-                                    {
-                                        "name": "guide_user_package_core_field_complex_array",
-                                        "title": "Комплексный массив",
-                                        "description": "Описание поля Комплексный массив."
-                                    },
-                                    {
-                                        "name": "guide_user_package_core_field_complex_array",
-                                        "title": "Комплексный массив",
-                                        "description": "Описание поля Комплексный массив."
-                                    },
-                                    {
-                                        "name": "guide_user_package_core_field_complex_array",
-                                        "title": "Комплексный массив",
-                                        "description": "Описание поля Комплексный массив."
-                                    },
-                                    {
-                                        "name": "guide_user_package_core_field_complex_array",
-                                        "title": "Комплексный массив",
-                                        "description": "Описание поля Комплексный массив."
-                                    },
-                                    {
-                                        "name": "guide_user_package_core_field_complex_array",
-                                        "title": "Комплексный массив",
-                                        "description": "Описание поля Комплексный массив."
-                                    },
-                                    {
-                                        "name": "guide_user_package_core_field_complex_array",
-                                        "title": "Комплексный массив",
-                                        "description": "Описание поля Комплексный массив."
-                                    },
-                                    {
-                                        "name": "guide_user_package_core_field_complex_array",
-                                        "title": "Комплексный массив",
-                                        "description": "Описание поля Комплексный массив."
-                                    },
-                                    {
-                                        "name": "guide_user_package_core_field_complex_array",
-                                        "title": "Комплексный массив",
+                                        "title": "Блокировано",
                                         "description": "Описание поля Комплексный массив."
                                     },
                                     {
